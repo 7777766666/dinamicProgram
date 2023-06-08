@@ -4,10 +4,10 @@ public class Str {
 
     public static void main(String[] args) {
 
-        String zxcvnm = "zxcvnm313";
-        String zxm1 = "zxm71";
+        String zxcvnm = "abd";
+        String zxm1 = "ad";
         Str str = new Str();
-        int same = str.same(zxm1, zxcvnm);
+        int same = str.same(zxcvnm, zxm1);
         System.out.println(same);
 
     }
@@ -23,7 +23,8 @@ public class Str {
                 if (x.charAt(i - 1) == y.charAt(j - 1)) {
                     dp[i][j] = dp[i - 1][j - 1] + 1;
                 } else {
-                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                    dp[i][j] = Math.max(dp[i-1][j], dp[i][j - 1]);
+
                 }
             }
         }
