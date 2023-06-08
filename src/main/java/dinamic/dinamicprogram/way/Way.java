@@ -5,19 +5,21 @@ public class Way {
     public static void main(String[] args) {
 
         Way way = new Way();
-        int n = 20;
-        int m = 20;
+        int n = 6;
+        int m = n;
 
+        long start2 = System.nanoTime();
+        int dinamic = way.dinamic(n, m);
+        long end2 = System.nanoTime();
+        System.out.println(((end2 - start2) / 1000) + "  second finish");
 
         long start1 = System.nanoTime();
         int result1 = way.anyWay(n, m);
         long finish1 = System.nanoTime();
         System.out.println(((finish1 - start1) / 1000) + "  first method time");
-        long start2 = System.nanoTime();
-        int dinamic = way.dinamic(n, m);
-        long end2 = System.nanoTime();
-        System.out.println(((end2 - start2) / 1000) + "  second finish");
+
         System.out.println(dinamic == result1);
+        System.out.println(dinamic);
 
     }
 
