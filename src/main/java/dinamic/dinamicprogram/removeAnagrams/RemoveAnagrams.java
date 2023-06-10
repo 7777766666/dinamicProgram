@@ -14,6 +14,7 @@ public class RemoveAnagrams {
     }
 
 
+
     public List<String> removeAnagrams(String[] words) {
         List<String> list = new ArrayList<>();
         list.add(words[0]);
