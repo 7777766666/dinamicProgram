@@ -11,6 +11,8 @@ public class RemoveAnagrams {
         RemoveAnagrams removeAnagrams = new RemoveAnagrams();
         System.out.println(removeAnagrams.removeAnagrams(words));
 
+        System.out.println(Float.MAX_VALUE + " val");
+
     }
 
 
