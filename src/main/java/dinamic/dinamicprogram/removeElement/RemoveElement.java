@@ -16,7 +16,7 @@ public class RemoveElement {
         System.out.println(rm.removeElement(nums1, x));
         System.out.println(rm.removeElement(nums2, x));
 
-        
+
 
 
 
